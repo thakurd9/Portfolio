@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Darshan Thakur</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Darshan Thakur</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Darshan Thakur profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Darshan Thakur</h1>
+        <p class="section__text__p2">Mechanical Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume_Darshan_Thakur.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" 
+            onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/darshan-thakur/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/thakurd9/'"
+          />         
+        </div>
+      </div>
+
+
+
+
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Mechanical Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>M.Sc. Masters Degree <br />Trinity College Dublin, Ireland</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+             I am a mechanical engineer with over three years of hands-on experience in mechanical design, simulation, 
+             and thermal optimization across defense, transportation, and consumer product sectors. Currently pursuing 
+             my MSc in Mechanical Engineering at Trinity College Dublin, I specialize in applying tools like CAD, FEA, 
+             and CFD to develop efficient, reliable systems. 
+             I’m passionate about solving complex design challenges through a combination of analytical thinking, 
+             technical precision, and cross-functional collaboration.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+
+
+
+
+
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+        <div class="project-card">
+            <div class="project-card-content">
+              <img src="./assets/Thesis.gif" alt="Project 1" class="project-img" />
+              
+              <div class="project-info">
+                <h2 class="project-title">Benchmarking and Optimizing Enhanced Natural Convection Heat Sinks</h2>
+                <p class="project-description">Simulation-based evaluation and optimization of vertical-fin heat sink designs 
+                  for passive thermal management in electronics. Using validated CFD models and comparative literature analysis, 
+                  optimized straight and displacement fin geometries achieved improved heat transfer performance while 
+                  maintaining equal volume and base temperature conditions. Results support a standardized evaluation 
+                  framework for enhanced natural convection designs in compact passive cooling applications.</p>
+
+                <!-- ✅ Button container must be inside this flex column -->
+                <div class="btn-container">
+                  <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/thakurd9/Masters-Thesis', '_blank')">
+                    GitHub
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="project-card">
+            <div class="project-card-content">
+              <img src="./assets/CryoSync.png" alt="Project 1" class="project-img" />
+              
+              <div class="project-info">
+                <h2 class="project-title">Design and Development of Graphics Card Cooler</h2>
+                <p class="project-description">CryoSync is a next-gen liquid cooling solution for high-performance GPUs like 
+                  the RTX 3090. It combines jet impingement heat transfer with adaptive pump control to maintain GPU temperatures 
+                  below 36°C while reducing energy use by up to 85% under low-load conditions. The modular top plate enables user 
+                  customization, and its die-cast aluminum build ensures efficient, scalable manufacturing.</p>
+
+                <!-- ✅ Button container must be inside this flex column -->
+                <div class="btn-container">
+                  <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/thakurd9/Project-01', '_blank')">
+                    GitHub
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        <div class="project-card">
+            <div class="project-card-content">
+              <img src="./assets/PortaVax.png" alt="Project 1" class="project-img" />
+              
+              <div class="project-info">
+                <h2 class="project-title">Design and Development Low-Cost Portable Cooler for Transport and Storage of Vaccines</h2>
+                <p class="project-description">PortaVax is a lightweight, power-free vaccine cooler designed for last-mile 
+                  delivery in remote regions. Using ATP-6 phase change material and layered insulation, it maintains temperatures 
+                  below 8°C upto 25 hours. With a capacity of 840 vials and an ergonomic backpack-style frame, PortaVax 
+                  offers rugged performance, comfort, and affordability for critical medical outreach.</p>
+
+                <!-- ✅ Button container must be inside this flex column -->
+                <div class="btn-container">
+                  <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/thakurd9/Project-02', '_blank')">
+                    GitHub
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="project-card">
+            <div class="project-card-content">
+              <img src="./assets/Radiator.png" alt="Project 1" class="project-img" />
+              
+              <div class="project-info">
+                <h2 class="project-title">Design and Development of Novel Heat Exchanger Shapes</h2>
+                <p class="project-description">ThermoShelf is a dual-purpose hydronic radiator that combines high-efficiency 
+                  heating with modular shelving for modern living spaces. Designed to deliver up to 1000W of thermal output 
+                  via natural convection, it replaces negative wall space with functional storage. Its aluminum heat exchanger 
+                  and mild steel frame are engineered for manufacturability and cost-efficiency, while customizable shelving 
+                  enables flexible use across homes, offices, and hotels.</p>
+
+                <!-- ✅ Button container must be inside this flex column -->
+                <div class="btn-container">
+                  <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/thakurd9/Project-03', '_blank')">
+                    GitHub
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+        <div class="project-card">
+            <div class="project-card-content">
+              <img src="./assets/Guitar.png" alt="Project 1" class="project-img" />
+              
+              <div class="project-info">
+                <h2 class="project-title">Experimental Verification of Prototype Domestic Wet Radiator</h2>
+                <p class="project-description">Experimental verification of a prototype domestic wet radiator combining efficient 
+                  heat transfer with a visually striking guitar-shaped design. The system was fabricated from aluminum and 
+                  copper, tested across varying flow rates and inlet temperatures, and analyzed through both experimental 
+                  and CFD methods. Results showed a peak heat transfer of 412 W at 6 L/min, with clear thermal gradients 
+                  observed via infrared imaging. Deviations between CFD and physical testing highlighted the impact of 
+                  real-world manifold losses and non-uniform flow distribution.</p>
+
+                <!-- ✅ Button container must be inside this flex column -->
+                <div class="btn-container">
+                  <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/thakurd9/Project-04', '_blank')">
+                    GitHub
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        <div class="project-card">
+            <div class="project-card-content">
+              <img src="./assets/UAV.png" alt="Project 1" class="project-img" />
+              
+              <div class="project-info">
+                <h2 class="project-title">Experimental Evaluation of Advanced UAV Noise Reduction Technology</h2>
+                <p class="project-description">Experimental evaluation of advanced UAV noise reduction technology involved 
+                  aerodynamic and acoustic optimization of drone propeller blades using novel design modifications. 
+                  Trailing-edge serrations with anhedral eagle winglets achieved a 31.96% increase in thrust and a 
+                  21.2% reduction in high-frequency noise, validated through 3D-printed prototypes and precision thrust 
+                  stand testing.</p>
+
+                <!-- ✅ Button container must be inside this flex column -->
+                <div class="btn-container">
+                  <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/thakurd9/Project-05', '_blank')">
+                    GitHub
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="project-card">
+            <div class="project-card-content">
+              <img src="./assets/HDPE.png" alt="Project 1" class="project-img" />
+              
+              <div class="project-info">
+                <h2 class="project-title">Design and Fabrication of HDPE Pipe Welding Machine</h2>
+                <p class="project-description">This HDPE Pipe Welding Machine was custom-built for C. Vishnu Plastic Welds to 
+                  enable efficient butt fusion welding of polyethylene pipelines. It features a rack-and-pinion driven clamping 
+                  system, a precision-controlled heating plate, and an adjustable frame to accommodate various pipe diameters. 
+                  Designed for reliability and portability, the machine delivers strong, uniform welds compliant with ASTM F2620 
+                  standards and significantly reduces setup and operation time for field technicians.</p>
+
+                <!-- ✅ Button container must be inside this flex column -->
+                <div class="btn-container">
+                  <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/thakurd9/Project-06', '_blank')">
+                    GitHub
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:thakurd@tcd.ie">thakurd@tcd.ie</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/darshan-thakur/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/Phone.png" alt="Phone icon" class="icon contact-icon" />
+            <p><a href="tel:+353892415701">+353 892415701</a></p>
+        </div>
+      </div>
+
+
+
+
+
+
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Darshan Thakur All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
